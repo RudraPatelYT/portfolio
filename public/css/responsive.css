@@ -1,0 +1,93 @@
+.link {
+  transition: 0.3s all ease-in-out;
+}
+
+body {
+  font-family: "Poppins", ui-sans-serif, sans-serif;
+}
+
+.btn:hover {
+  transition: 0.3s all ease-in-out;
+  opacity: 0.8;
+}
+
+::-webkit-scrollbar {
+  background: transparent;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  width: 10px;
+  margin: 5px;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-color: #0afa94;
+  border-radius: 100px;
+  border: 3px solid #242845;
+}
+
+/* skills */
+section.work > .container > h1 {
+  text-align: center;
+}
+
+section.work > .container > h1 > span {
+  color: #0afa94;
+}
+
+section.work .card-wrapper {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+section.work .card-wrapper .card {
+  margin-left: 20px;
+  margin-right: 20px;
+  position: relative;
+  width: 100px;
+  border-radius: 50px;
+}
+
+section.work .card-wrapper .card .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  background: #0afa94;
+  display: flex;
+  transition: 0.3s ease-in-out;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: var(--light);
+  opacity: 0;
+}
+
+section.work .card-wrapper .card:hover .overlay {
+  opacity: 1;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+section.work .card-wrapper .card .overlay a {
+  color: var(--secondary);
+  text-decoration: none;
+}
+
+section.work .card-wrapper .card img {
+  background-color: #0afa94;
+  border-radius: 50px;
+  width: 100px;
+}
+
+@media (max-width: 375px) {
+  section.work .card-wrapper .card {
+    margin-left: 10px;
+  }
+}
